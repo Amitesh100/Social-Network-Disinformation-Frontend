@@ -11,16 +11,22 @@ export default function Sidebar({
   onSelectPost 
 }) {
   return (
-    <aside style={{
-      width: '380px',
-      backgroundColor: 'var(--bg-panel)',
-      borderLeft: '1px solid var(--border-color)',
-      padding: '20px',
-      overflowY: 'auto',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '20px'
-    }}>
+        <aside style={{
+        width: '380px',
+        minWidth: '380px',       
+        maxWidth: '380px',
+        flexShrink: 0,           
+        backgroundColor: 'var(--bg-panel)',
+        borderLeft: '1px solid var(--border-color)',
+        padding: '20px',
+        overflowY: 'auto',
+        height: '100%',
+        position: 'relative',
+        zIndex: 5,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '20px'
+        }}>
       {/* Node Inspector Panel */}
       <div>
         <h3 style={{ fontSize: '13px', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '12px' }}>

@@ -40,15 +40,19 @@ code, pre {
 .main-content {
   display: flex;
   flex: 1;
+  width: 100vw;
+  height: calc(100vh - 60px);
   position: relative;
   overflow: hidden;
 }
 
 .graph-wrapper {
   flex: 1;
+  min-width: 0;
   height: 100%;
   position: relative;
   background: radial-gradient(circle at center, #121829 0%, #090d16 100%);
+  overflow: hidden;
 }
 
 .btn {

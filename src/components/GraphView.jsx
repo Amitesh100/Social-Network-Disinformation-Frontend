@@ -43,7 +43,7 @@ export default function GraphView({
   };
 
   return (
-    <div className="graph-wrapper">
+    <div className="graph-wrapper" style={{ width: '100%', height: '100%', position: 'relative' }}>
       <ForceGraph2D
         ref={fgRef}
         graphData={graphData}
